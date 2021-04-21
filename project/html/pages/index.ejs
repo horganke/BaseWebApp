@@ -10,7 +10,18 @@
     <% include ../helpers/navbar %>
   
     <h1>Hello World</h1>
+    <button class="login">Login</button>
   </div>
+
+  <form onsubmit="handleMessageFormSubmit()" action="#">
+    Title<br>
+    <input id="post-title"><br>
+    Body<br>
+    <textarea id="post-body"></textarea><br>
+    <button>Submit</button>
+  </form>
+
+  <div id="post-listing"></div>
 
   <input class="search" type="text" placeholder="Enter city name">
   <button class="search-button" type="button">Search</button>
